@@ -27,9 +27,11 @@ public class RecviewAdapter extends RecyclerView.Adapter<RecviewAdapter.ViewHold
     @Override
     public RecviewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = mInflater.inflate(R.layout.recviewitem,parent,false);
+        View view = mInflater.inflate(R.layout.recviewitem, parent,false);
+        //View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recviewitem,parent,false);
 
         return new ViewHolder(view);
+        //return new ViewHolder(itemView);
     }
 
     @Override
